@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.left_nav {
+  border-right: 1px solid black;
+  width: 15px;
+  max-width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80vh;
+  /* position: fixed; */
+  padding: 25px 7px;
+}
+
+.left_up,
+.left_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.icon {
+  width: 15px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: aquamarine;
+}
+
+.right {
+  padding: 25px 25px;
+  max-height: 80vh;
+  overflow-y: scroll;
+  background-color: lightgrey;
+}
+
+
+.surahs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.surahs .surah {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 3px 3px 3px 3px rgb(155, 155, 155);
+  text-align: center;
+  position: relative;
+  margin: 15px 7px;
+  height: 120px;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+
+.surahs .surah:hover {
+  box-shadow: 3px 3px 3px 3px rgb(82, 82, 82);
+}
+
+/* .surahs .surah div {
+  margin: 9px 0;
+} */
+
+.order {
+  padding: 7px;
+  background-color: rgb(13, 12, 12, 0.1);
+  color: green;
+  width: 10px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px 0;
+}
+
+.name {
+  font-weight: bold;
+  margin: 12px 0;
+}
+.meaning {
+  font-size: 90%;
+}
+
+.remove {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgb(255, 0, 0, 0.1);
+  color: red;
+  font-size: 90%;
+  padding: 7px;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.heading {
+  color: green;
+  font-size: 150%;
+  padding: 10px 0;
+  border-bottom: 1px solid green;
+}
+
+.verseCard {
+  padding: 7px;
+  box-shadow: 1px 1px 1px 1px grey;
+  background-color: white;
+  margin: 15px 7px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.verse_meaning {
+  font-weight: 550;
+  font-size: 100%;
+}
+
+.reference {
+  margin: 7px 0;
+  font-weight: 450;
+  font-size: 85%;
+  color: rgb(93, 93, 93);
+  display: inline-block;
+  background-color: rgb(0, 0, 0,0.1);
+  padding:3px;
+}
+
+.action {
+  background-color: rgb(255, 0, 0, 0.1);
+  color: red;
+  font-size: 90%;
+  padding: 7px;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+}

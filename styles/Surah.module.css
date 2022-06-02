@@ -1,0 +1,67 @@
+.surah {
+  background-color: white;
+  width: 150px;
+  height: 80px;
+  padding: 10px;
+  box-shadow: 3px 3px 3px lightgrey;
+  cursor: pointer;
+  /* padding-top: 20px; */
+}
+
+.surah:hover {
+  box-shadow: 3px 3px 3px grey;
+}
+
+.surah .action {
+  z-index: 100;
+}
+
+.surah .action:hover {
+  transform: scale(1.1);
+  color: green;
+}
+.surah_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.surah_order {
+  background-color: rgba(8, 139, 8, 0.3);
+  border-radius: 50%;
+  aspect-ratio: 20/15;
+  padding: 6px;
+  display: flex;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+  color: rgb(4, 194, 4);
+  font-size: 75%;
+  font-weight: 550;
+}
+
+.surah_bottom {
+  margin-top: 15px;
+}
+.surah_name {
+  font-size: 90%;
+  font-weight: 550;
+  margin-bottom: 10px;
+}
+
+.surah_eng {
+  font-weight: 500;
+  color: gray;
+}
+
+@media (max-width: 761px) {
+  .surah {
+    width: 95%;
+    height: 80px;
+    /* aspect-ratio: 2/1; */
+    padding: 10px;
+    cursor: pointer;
+    /* padding-top: 20px; */
+  }
+}
